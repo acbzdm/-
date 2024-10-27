@@ -15,6 +15,9 @@ $$\begin{align\\*}
 \frac{C_{8}^{1}*C_{36}^{3}}{C_{44}^{4} } +\frac{C_{8}^{2}*C_{36}^{2}}{C_{44}^{4} } +\frac{C_{8}^{3}*C_{36}^{1}}{C_{44}^{4} }+\frac{C_{8}^{4}*C_{36}^{0}}{C_{44}^{4} }
 \end{align\\*}$$
 
+$$\begin{align\\*}
+\frac{9}{6}
+\end{align\\*}$$
 
 Python
 使用scipy.special里的comb函数计算排列组合。使用tkinter做可视化输入输出
