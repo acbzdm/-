@@ -10,23 +10,42 @@
 举例示意
 现有牌做顺子差一张。弃掉剩下的4张牌后至少来一张9或A才能做出顺子
 需要牌的剩余总数为8，需要牌的至少数量1，弃牌后收到的牌数4，剩余牌数44
-$ \frac{C_{8}^{1}*C_{36}^{3}}{C_{44}^{4} } +\frac{C_{8}^{2}*C_{36}^{2}}{C_{44}^{4} } +\frac{C_{8}^{3}*C_{36}^{1}}{C_{44}^{4} }+\frac{C_{8}^{4}*C_{36}^{0}}{C_{44}^{4} } $
-$ \frac{6}{9} $
-其中：
-- \( P \) 是成功概率
-- \( C(n, k) \) 表示组合数（从 n 中选择 k 的方式数）
-- \( a \) 是剩余牌的总数
-- \( b \) 是需要的至少数量
-- \( c \) 是弃牌后收到的牌数
-- \( d \) 是剩余牌总数
+$$\begin{align\\*}
+\frac{C_{8}^{1}*C_{36}^{3}}{C_{44}^{4} } +\frac{C_{8}^{2}*C_{36}^{2}}{C_{44}^{4} } +\frac{C_{8}^{3}*C_{36}^{1}}{C_{44}^{4} }+\frac{C_{8}^{4}*C_{36}^{0}}{C_{44}^{4} }
+\end{align\\*}$$
+
+
+Python
+使用scipy.special里的comb函数计算排列组合。使用tkinter做可视化输入输出
+
+效果展示
+![作顺子的概率为56 61%](https://github.com/user-attachments/assets/23a3be6d-26a8-4a58-a0eb-185c9cd5307a)
+做顺子的概率为56.61%
+
+![作红桃同花的概率为31 67%](https://github.com/user-attachments/assets/fe1e9de3-5cb6-4042-b4ba-416388f61959)
+做红桃同花的概率为31.67%
+
+![弃牌做红心同花后做红心同花的概率38 12%](https://github.com/user-attachments/assets/558b6b65-13c7-4ada-b4c2-60e96f1541fd)
+弃牌做红心同花后做红心同花的概率38.12%，比31.67%并没有上升多少
+
+![弃牌作红心同花后作方块同花的概率为56 28%](https://github.com/user-attachments/assets/964d13c7-929b-4092-9fd5-15981b0b5db4)
+弃牌做红心同花后做方块同花的概率为56.28%
+
+![弃牌做红心同花后做小顺子的概率56 28%](https://github.com/user-attachments/assets/39957ddc-c355-4655-9aec-79da880eb316)
+弃牌做红心同花后做小顺子的概率56 28%
+
+![弃牌做红心同花后做大顺子的概率50 25%](https://github.com/user-attachments/assets/2000128a-18b6-4b1a-9158-68c37db19fca)
+弃牌做红心同花后做大顺子的概率50.25%
+
+此时做方块同花和小顺子的概率相同，但是同花的得分会更高。
+
+还有时会出现顺子，同花，葫芦都各差一张做成时使用该计算器计算更加快捷。
+
 
 ## 使用说明
-![弃牌作红心同花后作方块同花的概率为56 28%](https://github.com/user-attachments/assets/964d13c7-929b-4092-9fd5-15981b0b5db4)
-![弃牌做红心同花后做小顺子的概率56 28%](https://github.com/user-attachments/assets/39957ddc-c355-4655-9aec-79da880eb316)
-![弃牌做红心同花后做红心同花的概率38 12%](https://github.com/user-attachments/assets/558b6b65-13c7-4ada-b4c2-60e96f1541fd)
-![弃牌做红心同花后做大顺子的概率50 25%](https://github.com/user-attachments/assets/2000128a-18b6-4b1a-9158-68c37db19fca)
-![作顺子的概率为56 61%](https://github.com/user-attachments/assets/23a3be6d-26a8-4a58-a0eb-185c9cd5307a)
-![作红桃同花的概率为31 67%](https://github.com/user-attachments/assets/fe1e9de3-5cb6-4042-b4ba-416388f61959)
+
+
+
 
 
 1. 打开应用程序。
