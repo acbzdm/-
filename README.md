@@ -15,19 +15,15 @@ $$\begin{align\\*}
 \frac{C_{8}^{1}*C_{36}^{3}}{C_{44}^{4} } +\frac{C_{8}^{2}*C_{36}^{2}}{C_{44}^{4} } +\frac{C_{8}^{3}*C_{36}^{1}}{C_{44}^{4} }+\frac{C_{8}^{4}*C_{36}^{0}}{C_{44}^{4} }
 \end{align\\*}$$
 
-$$\begin{align\\*}
-\frac{9}{6}
-\end{align\\*}$$
-
-\\begin{array}{cc}
-     a & b \\\\
-     c & c
-\\end{array}
+$\sqrt{3x+1}$
 
 Python
 使用scipy.special里的comb函数计算排列组合。使用tkinter做可视化输入输出
 
+使用pyinstaller打包，过程中显示找不到scipy.special._ufuncs，最终打包的exe程序比较大76mb。
+
 效果展示
+
 ![作顺子的概率为56 61%](https://github.com/user-attachments/assets/23a3be6d-26a8-4a58-a0eb-185c9cd5307a)
 
 做顺子的概率为56.61%
