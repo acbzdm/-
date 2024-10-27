@@ -20,7 +20,7 @@
 Python
 使用scipy.special里的comb函数计算排列组合。使用tkinter做可视化输入输出
 
-使用pyinstaller打包，过程中显示找不到scipy.special._ufuncs，最终打包的exe程序比较大76mb。
+使用pyinstaller打包，过程中显示找不到scipy.special._ufuncs，最终打包的windows可运行程序在release中。
 
 效果展示
 
