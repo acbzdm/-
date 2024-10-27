@@ -19,26 +19,37 @@ $$\begin{align\\*}
 \frac{9}{6}
 \end{align\\*}$$
 
+\\begin{array}{cc}
+     a & b \\\\
+     c & c
+\\end{array}
+
 Python
 使用scipy.special里的comb函数计算排列组合。使用tkinter做可视化输入输出
 
 效果展示
 ![作顺子的概率为56 61%](https://github.com/user-attachments/assets/23a3be6d-26a8-4a58-a0eb-185c9cd5307a)
+
 做顺子的概率为56.61%
 
 ![作红桃同花的概率为31 67%](https://github.com/user-attachments/assets/fe1e9de3-5cb6-4042-b4ba-416388f61959)
+
 做红桃同花的概率为31.67%
 
 ![弃牌做红心同花后做红心同花的概率38 12%](https://github.com/user-attachments/assets/558b6b65-13c7-4ada-b4c2-60e96f1541fd)
+
 弃牌做红心同花后做红心同花的概率38.12%，比31.67%并没有上升多少
 
 ![弃牌作红心同花后作方块同花的概率为56 28%](https://github.com/user-attachments/assets/964d13c7-929b-4092-9fd5-15981b0b5db4)
+
 弃牌做红心同花后做方块同花的概率为56.28%
 
 ![弃牌做红心同花后做小顺子的概率56 28%](https://github.com/user-attachments/assets/39957ddc-c355-4655-9aec-79da880eb316)
+
 弃牌做红心同花后做小顺子的概率56 28%
 
 ![弃牌做红心同花后做大顺子的概率50 25%](https://github.com/user-attachments/assets/2000128a-18b6-4b1a-9158-68c37db19fca)
+
 弃牌做红心同花后做大顺子的概率50.25%
 
 此时做方块同花和小顺子的概率相同，但是同花的得分会更高。
